@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@600&family=Red+Hat+Display:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,6 +15,8 @@ html {
     background-image: url('./order-summary-component-main/images/pattern-background-desktop.svg');
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
 }
 
 .wrapper {
@@ -30,9 +31,8 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightyellow;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    background-color: white;
+    border-radius: 25px;
     width: 450px;
 }
 
@@ -45,7 +45,6 @@ html {
 .main {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     text-align: center;
     margin-top: 40px;
@@ -54,4 +53,47 @@ html {
 main p {
     margin-top: 10px;
     padding: 0 60px 0 60px;
+    color: hsl(224, 23%, 55%);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.ctn_da{
+    display: flex;
+    
+}
+
+.ctn_data{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+button {
+    margin-top: 10px;
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    background-color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    color:hsl(224, 23%, 55%);
+    transition: .4s;
+}
+
+a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+ul {
+    list-style:  none;
 }
